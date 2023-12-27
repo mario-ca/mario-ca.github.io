@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+[Ver CV](/files/CV%20Mario%20Daniel%20Castro%20Almenzar.pdf)
+
 Education
 ======
 * B.S. in GitHub, GitHub University, 2012
