@@ -11,4 +11,4 @@ redirect_from:
 
 [Descargar CV](/files/CV%20Mario%20Daniel%20Castro%20Almenzar.pdf)
 
-![Foto de CV](/images/Mario Daniel Castro Almenzar.jpg)
+![Foto de CV](/images/CV%20Mario%20Daniel%20Castro%20Almenzar.jpg)
