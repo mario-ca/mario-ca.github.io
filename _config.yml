@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Mario Castro Almenzar"
-  avatar           : "/images/profile.jpeg"
+  avatar           : "profile.png"
   bio              : "Currently studying a Computer Engineering degree at the University of Granada. I enjoy learning about hacking and Linux-related topics. ;)"
   location         : "Granada, Spain"
   employer         :
