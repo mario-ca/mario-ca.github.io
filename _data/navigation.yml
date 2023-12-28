@@ -9,6 +9,9 @@ main:
   - title: "Writeups"
     url: /writeups/
 
+  - title: "Advent of Cyber ’23 Side Quest — 1 : The Return of the Yeti"
+    url: /writeups/AOC_2023_SQ_1/
+
   # - title: "Talks"
   #   url: /talks/    
 
