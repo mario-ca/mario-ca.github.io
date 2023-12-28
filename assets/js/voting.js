@@ -1,16 +1,34 @@
-// Contenido del archivo voting.js
-
 document.addEventListener('DOMContentLoaded', function() {
-    var likeCount = 0;
-    var dislikeCount = 0;
+    var likeButton = document.getElementById('like-button');
+    var dislikeButton = document.getElementById('dislike-button');
+    var likeCountElement = document.getElementById('like-count');
+    var dislikeCountElement = document.getElementById('dislike-count');
+    var hasVoted = localStorage.getItem('hasVoted');
 
-    document.getElementById('like-button').addEventListener('click', function() {
+    function disableVoting() {
+        likeButton.style.opacity = '0.5';
+        dislikeButton.style.opacity = '0.5';
+        likeButton.style.pointerEvents = 'none';
+        dislikeButton.style.pointerEvents = 'none';
+    }
+
+    if (hasVoted) {
+        disableVoting();
+    }
+
+    likeButton.addEventListener('click', function() {
+        var likeCount = parseInt(likeCountElement.innerText);
         likeCount++;
-        document.getElementById('like-count').innerText = likeCount;
+        likeCountElement.innerText = likeCount;
+        disableVoting();
+        localStorage.setItem('hasVoted', 'true');
     });
 
-    document.getElementById('dislike-button').addEventListener('click', function() {
+    dislikeButton.addEventListener('click', function() {
+        var dislikeCount = parseInt(dislikeCountElement.innerText);
         dislikeCount++;
-        document.getElementById('dislike-count').innerText = dislikeCount;
+        dislikeCountElement.innerText = dislikeCount;
+        disableVoting();
+        localStorage.setItem('hasVoted', 'true');
     });
 });
