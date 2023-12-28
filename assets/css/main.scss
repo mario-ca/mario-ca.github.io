@@ -39,3 +39,24 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+.voting {
+    display: flex;
+    align-items: center;
+  }
+  
+  .voting-button {
+    height: 40px; /* Ajusta esto al tamaño que prefieras */
+    cursor: pointer;
+    margin-right: 10px; /* Espacio entre el botón de like y el contador */
+  }
+  
+  .voting-button:last-child {
+    margin-right: 0; /* Asegúrate de que no haya margen extra después del último botón */
+  }
+  
+  .voting-count {
+    font-size: 1em; /* Ajusta esto al tamaño de fuente que prefieras */
+    margin-right: 20px; /* Espacio entre el contador y el siguiente botón o elemento */
+  }
+  
