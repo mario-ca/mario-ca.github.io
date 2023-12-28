@@ -13,9 +13,15 @@ In this section you will find some writeups of the challenges I have solved in d
 
 ### TryHackMe
 
+---
+
 ### HackTheBox
 
-## VulnHub
+---
+
+## Others
+
+### VulnHub
 
 ### PicoCTF
 
@@ -25,5 +31,7 @@ In this section you will find some writeups of the challenges I have solved in d
 
 ### Microcorruption
 
-### CTFs
+---
+
+## CTFs
 
