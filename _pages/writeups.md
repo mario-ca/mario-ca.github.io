@@ -13,6 +13,8 @@ In this section you will find some writeups of the challenges I have solved in d
 
 ### TryHackMe
 
+- [Advent of Cyber ’23 Side Quest — 1 : The Return of the Yeti](https://mario-ca.github.io/writeups/AOC_2023_SQ_1/)
+
 ---
 
 ### HackTheBox
