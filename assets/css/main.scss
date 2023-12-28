@@ -59,4 +59,18 @@
     font-size: 1em; /* Ajusta esto al tamaño de fuente que prefieras */
     margin-right: 20px; /* Espacio entre el contador y el siguiente botón o elemento */
   }
+
+    .voting-button:hover {
+        color: #136b9e;
+    }
   
+    @media (max-width: 768px) {
+        .voting-button {
+          height: 30px; /* Más pequeño en dispositivos móviles */
+        }
+      
+        .voting-count {
+          font-size: 0.8em; /* Fuente más pequeña en dispositivos móviles */
+        }
+      }
+      
