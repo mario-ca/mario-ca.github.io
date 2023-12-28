@@ -3,7 +3,9 @@ document.addEventListener('DOMContentLoaded', function() {
     var dislikeButton = document.getElementById('dislike-button');
     var likeCountElement = document.getElementById('like-count');
     var dislikeCountElement = document.getElementById('dislike-count');
-    var hasVoted = localStorage.getItem('hasVoted');
+
+    likeCountElement.innerText = localStorage.getItem('likeCount') || 0;
+    dislikeCountElement.innerText = localStorage.getItem('dislikeCount') || 0;
 
     function disableVoting() {
         likeButton.style.opacity = '0.5';
@@ -12,21 +14,23 @@ document.addEventListener('DOMContentLoaded', function() {
         dislikeButton.style.pointerEvents = 'none';
     }
 
-    if (hasVoted) {
+    if (localStorage.getItem('hasVoted')) {
         disableVoting();
     }
 
     likeButton.addEventListener('click', function() {
-        var likeCount = parseInt(likeCountElement.innerText);
+        var likeCount = parseInt(localStorage.getItem('likeCount'), 10) || 0;
         likeCount++;
+        localStorage.setItem('likeCount', likeCount);
         likeCountElement.innerText = likeCount;
         disableVoting();
         localStorage.setItem('hasVoted', 'true');
     });
 
     dislikeButton.addEventListener('click', function() {
-        var dislikeCount = parseInt(dislikeCountElement.innerText);
+        var dislikeCount = parseInt(localStorage.getItem('dislikeCount'), 10) || 0;
         dislikeCount++;
+        localStorage.setItem('dislikeCount', dislikeCount);
         dislikeCountElement.innerText = dislikeCount;
         disableVoting();
         localStorage.setItem('hasVoted', 'true');
